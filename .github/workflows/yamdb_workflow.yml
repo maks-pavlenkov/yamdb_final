@@ -21,8 +21,8 @@ jobs:
           pip install flake8 pep8-naming flake8-broken-line flake8-return flake8-isort
           # установка зависимостей
           pwd
-          ls
           cd api_yamdb/
+          pwd
           ls
           pip install -r api_yamdb/requirements.txt
 
