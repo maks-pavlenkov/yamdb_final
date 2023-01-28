@@ -10,8 +10,8 @@ from rest_framework.views import APIView
 from rest_framework_simplejwt.tokens import AccessToken
 from users.models import User
 
-from .permissions import (IsAdminOrSuperuser)
-from .serializers import (SignUpSerializer, TokenSerializer, UserSerializer)
+from .permissions import IsAdminOrSuperuser
+from .serializers import SignUpSerializer, TokenSerializer, UserSerializer
 
 
 class UserViewSet(viewsets.ModelViewSet):

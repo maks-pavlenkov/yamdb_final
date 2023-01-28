@@ -6,8 +6,6 @@ from users.models import User
 
 from .validators import data_validation
 
-from .validators import data_validation
-
 
 class Command(BaseCommand):
 
