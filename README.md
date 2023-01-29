@@ -92,4 +92,4 @@ api/v1/titles/{title_id}/reviews/{review_id}/comments/
     "text": "hello"
 }
 ```
-!(https://github.com/maks-pavlenkov/yamdb_final/blob/master/.github/workflows/yamdb_workflow.yml/badge.svg?)
+![example workflow](https://github.com/maks-pavlenkov/yamdb_final/blob/master/.github/workflows/yamdb_workflow.yml/badge.svg?)
