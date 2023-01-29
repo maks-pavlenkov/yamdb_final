@@ -11,6 +11,7 @@ services:
     env_file:
       - ./.env
   web:
+    image: edmpeople/13sprint:latest
     build: ../api_yamdb
     restart: always
     volumes:
