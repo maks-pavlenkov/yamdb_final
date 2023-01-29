@@ -1,3 +1,5 @@
+![yamdb_workflow.yml](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
+
 # YaMDb API
 ### Описание
 YaMDb — всемирно известный сервис, который собирает рецензии пользователей на произведения в самом широком смысле: книги, фильмы, песни, картины и даже резиновые уточки, как отдельный вид искусства. Пользователи ставят произведениям оценки от 1 до 10, формируя тем самым рейтинг, и могут комментировать рецензии друг друга.
@@ -92,4 +94,3 @@ api/v1/titles/{title_id}/reviews/{review_id}/comments/
     "text": "hello"
 }
 ```
-![yamdb_workflow.yml](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
