@@ -12,7 +12,9 @@ services:
       - ./.env
   web:
     image: edmpeople/13sprint:latest
-    build: ../api_yamdb
+    build:
+      context: ../
+      dockerfile: api_yamdb/Dockerfile
     restart: always
     volumes:
       # Контейнер web будет работать с данными, хранящиеся в томе static_value, 
