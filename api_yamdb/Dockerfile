@@ -1,24 +1,11 @@
 FROM python:3.9.5-slim-buster
 
-# Создать директорию вашего приложения.
-RUN mkdir /app
-
-# Скопировать с локального компьютера файл зависимостей
-# в директорию /app.
-COPY requirements.txt /app
-
-# Выполнить установку зависимостей внутри контейнера.
-RUN apt-get update \
-    && apt-get -y install libpq-dev gcc \
-    && pip install psycopg2
-RUN pip3 install -r /app/requirements.txt --no-cache-dir
-
-# Скопировать содержимое директории /api_yamdb c локального компьютера
-# в директорию /app.
-COPY api_yamdb/ /app
-
-# Сделать директорию /app рабочей директорией. 
 WORKDIR /app
 
-# Выполнить запуск сервера разработки при старте контейнера.
-CMD ["gunicorn", "api_yamdb.wsgi:application", "--bind", "0:8000" ]
+COPY requirements.txt .
+
+RUN pip3 install -r requirements.txt --no-cache-dir
+
+COPY . .
+
+CMD ["sh", "start_server.sh"]
