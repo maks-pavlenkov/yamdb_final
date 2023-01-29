@@ -92,7 +92,4 @@ api/v1/titles/{title_id}/reviews/{review_id}/comments/
     "text": "hello"
 }
 ```
-### Авторы
-- **Максим Павленков** (тимлид, разработка ресурсов Reviews и Comments)
-- **Екатерина Яковлева** (разработка системы регистрации, аутентификации и управления пользователями)
-- **Анна Головнина** (разработка ресурсов Title, Genres и Categories)
+!(https://github.com/maks-pavlenkov/yamdb_final/blob/master/.github/workflows/yamdb_workflow.yml/badge.svg?)
