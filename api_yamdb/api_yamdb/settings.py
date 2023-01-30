@@ -71,7 +71,6 @@ DATABASES = {
 }
 
 
-
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
@@ -88,7 +87,6 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
-
 LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
@@ -100,9 +98,7 @@ USE_L10N = True
 USE_TZ = True
 
 
-
 STATIC_URL = '/static/'
-
 
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
